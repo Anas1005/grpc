@@ -30,7 +30,7 @@ const server = new grpc.Server();
 server.addService(ecommerce.PaymentService.service, { processPayment });
 
 // Start server
-const PORT = process.env.PORT || 50053;
+const PORT = 50053;
 server.bindAsync(`0.0.0.0:${PORT}`, grpc.ServerCredentials.createInsecure(), () => {
   console.log(`Payment service gRPC server running at http://localhost:${PORT}`);
   server.start();

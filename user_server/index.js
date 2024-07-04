@@ -61,7 +61,7 @@ const server = new grpc.Server();
 server.addService(ecommerce.UserService.service, { getUser, updateUser });
 
 // Start server
-const PORT = process.env.PORT || 50051;
+const PORT = 50051;
 server.bindAsync(`0.0.0.0:${PORT}`, grpc.ServerCredentials.createInsecure(), () => {
   console.log(`User service gRPC server running at http://localhost:${PORT}`);
   server.start();
