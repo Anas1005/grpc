@@ -57,11 +57,10 @@ Explore the benefits of using gRPC:
 - **Duplex Streaming**: Supports simultaneous client and server streaming.
 - **First Class Load Balancing**: Built-in feature for backend traffic management.
 - **Selective Message Compression**: Turn off compression for non-compressible content.
-- **Auto Generated Client Code**: Easily generate client and server code with `protoc`.
 - **Heavily Optimized**: Continuous benchmarks to ensure performance.
 - **Connection Pooling**: Managed channels with states like connected or idle.
 
-## gRPC Communication Types
+## gRPC   Communication Types
 
 Different types of communication supported by gRPC:
 - **Unary RPC**: Traditional request-response-style communication.
